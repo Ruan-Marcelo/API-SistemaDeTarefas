@@ -1,4 +1,8 @@
 
+using Microsoft.EntityFrameworkCore;
+using SistemaDeTarefasAPI.Data;
+using SistemaDeTarefasAPI.Repositorios.Interfaces;
+
 namespace SistemaDeTarefasAPI
 {
     public class Program
@@ -12,6 +16,13 @@ namespace SistemaDeTarefasAPI
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
+
+            builder.Services.AddEntityFrameworkSqlServer()
+                .AddDbContext<SistemaTarefasDBContex>(
+                    options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase"))                                              
+                );
+
+            builder.Services.AddScoped<IUsuarioRepositorio, IUsuarioRepositorio>();
 
             var app = builder.Build();
 
