@@ -89,11 +89,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\black\\Downloads\\Projetos\\SistemaDeTarefasAPI\\SistemaDeTarefasAPI\\SistemaDeTarefasAPI.csproj",
+      "projectUniqueName": "C:\\Users\\black\\source\\repos\\Ruan-Marcelo\\API-SistemaDeTarefas\\SistemaDeTarefasAPI\\SistemaDeTarefasAPI\\SistemaDeTarefasAPI.csproj",
       "projectName": "SistemaDeTarefasAPI",
-      "projectPath": "C:\\Users\\black\\Downloads\\Projetos\\SistemaDeTarefasAPI\\SistemaDeTarefasAPI\\SistemaDeTarefasAPI.csproj",
+      "projectPath": "C:\\Users\\black\\source\\repos\\Ruan-Marcelo\\API-SistemaDeTarefas\\SistemaDeTarefasAPI\\SistemaDeTarefasAPI\\SistemaDeTarefasAPI.csproj",
       "packagesPath": "C:\\Users\\black\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\black\\Downloads\\Projetos\\SistemaDeTarefasAPI\\SistemaDeTarefasAPI\\obj\\",
+      "outputPath": "C:\\Users\\black\\source\\repos\\Ruan-Marcelo\\API-SistemaDeTarefas\\SistemaDeTarefasAPI\\SistemaDeTarefasAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
