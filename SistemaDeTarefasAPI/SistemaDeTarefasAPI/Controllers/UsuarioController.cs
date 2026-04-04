@@ -26,9 +26,9 @@ namespace SistemaDeTarefasAPI.Controllers
 
         [HttpGet("{id}")]
         public async Task<ActionResult<UsuarioModel>> BuscarPorId(int id)
-        {
-           UsuarioModel usuario = await _usuarioRepositorio.BuscarPorId(id);
-            return Ok(usuario);
+        { 
+                UsuarioModel usuario = await _usuarioRepositorio.BuscarPorId(id);
+                return Ok(usuario);          
         }
 
         [HttpPost]
@@ -36,7 +36,24 @@ namespace SistemaDeTarefasAPI.Controllers
         {
             UsuarioModel usuario = await _usuarioRepositorio.Adicionar(usuarioModel);
 
-            return Ok();
+            return Ok("Usuario cadastrado com sucesso");
+        }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult<UsuarioModel>> Atualizar([FromBody] UsuarioModel usuarioModel, int id)
+        {
+            usuarioModel.Id = id;
+            UsuarioModel usuario = await _usuarioRepositorio.Atualizar(usuarioModel, id);
+
+            return Ok("Usuario Atualizado com sucesso");
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<UsuarioModel>> Apagar( int id)
+        {
+            bool apagado = await _usuarioRepositorio.Apagar(id);
+
+            return Ok("Usuario Apagado com sucesso" + apagado);
         }
     }
 }
