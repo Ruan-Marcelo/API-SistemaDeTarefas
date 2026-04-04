@@ -53,7 +53,7 @@ namespace SistemaDeTarefasAPI.Controllers
         {
             bool apagado = await _usuarioRepositorio.Apagar(id);
 
-            return Ok("Usuario Apagado com sucesso" + apagado);
+            return Ok("Usuario Apagado com sucesso");
         }
     }
 }
