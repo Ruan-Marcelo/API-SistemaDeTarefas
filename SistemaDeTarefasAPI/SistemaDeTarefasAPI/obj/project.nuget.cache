@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YGTl/rPNYnU=",
+  "dgSpecHash": "i6EtUn95jiE=",
   "success": true,
   "projectFilePath": "C:\\Users\\black\\source\\repos\\Ruan-Marcelo\\API-SistemaDeTarefas\\SistemaDeTarefasAPI\\SistemaDeTarefasAPI\\SistemaDeTarefasAPI.csproj",
   "expectedPackageFiles": [
@@ -40,6 +40,8 @@
     "C:\\Users\\black\\.nuget\\packages\\microsoft.visualstudio.solutionpersistence\\1.0.52\\microsoft.visualstudio.solutionpersistence.1.0.52.nupkg.sha512",
     "C:\\Users\\black\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
     "C:\\Users\\black\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\black\\.nuget\\packages\\refit\\10.1.6\\refit.10.1.6.nupkg.sha512",
+    "C:\\Users\\black\\.nuget\\packages\\refit.httpclientfactory\\10.1.6\\refit.httpclientfactory.10.1.6.nupkg.sha512",
     "C:\\Users\\black\\.nuget\\packages\\system.clientmodel\\1.5.1\\system.clientmodel.1.5.1.nupkg.sha512",
     "C:\\Users\\black\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\black\\.nuget\\packages\\system.composition\\9.0.0\\system.composition.9.0.0.nupkg.sha512",

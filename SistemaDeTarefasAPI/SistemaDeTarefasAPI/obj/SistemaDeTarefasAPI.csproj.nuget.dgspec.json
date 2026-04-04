@@ -73,6 +73,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[10.0.5, )"
+            },
+            "Refit": {
+              "target": "Package",
+              "version": "[10.1.6, )"
+            },
+            "Refit.HttpClientFactory": {
+              "target": "Package",
+              "version": "[10.1.6, )"
             }
           },
           "imports": [
