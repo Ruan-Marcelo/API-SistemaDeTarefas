@@ -1,5 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
+using Refit;
+using SistemaDeTarefasAPI.Controllers.Integracao.Refit;
 using SistemaDeTarefasAPI.Data;
 using SistemaDeTarefasAPI.Repositorios;
 using SistemaDeTarefasAPI.Repositorios.Interfaces;
@@ -25,6 +27,11 @@ namespace SistemaDeTarefasAPI
 
             builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
             builder.Services.AddScoped<ITarefaRepositorio, TarefaRespositorio>();
+
+            builder.Services.AddRefitClient<IViaCepIntegracaoRefit>().ConfigureHttpClient(c =>
+            {
+                c.BaseAddress = new Uri("https://viacep.com.br");
+            });
 
             var app = builder.Build();
 
