@@ -4,15 +4,14 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace SistemaDeTarefasAPI.Data.Map
 {
-    public class TarefaMap : IEntityTypeConfiguration<TarefaModel>
+    public class UsuarioMap : IEntityTypeConfiguration<UsuarioModel>
     {
-        public void Configure(EntityTypeBuilder<TarefaModel> builder)
+        public void Configure(EntityTypeBuilder<UsuarioModel> builder)
         {
-           builder.HasKey(x => x.Id);
-           builder.Property(x => x.Nome).IsRequired().HasMaxLength(255);
-           builder.Property(x => x.Descricao).HasMaxLength(1000);
-           builder.Property(x => x.Status).IsRequired().HasMaxLength(1000);
-
+            builder.HasKey(x => x.Id);
+            builder.Property(x => x.Nome).IsRequired().HasMaxLength(255);
+            builder.Property(x => x.Email).IsRequired().HasMaxLength(150);
         }
     }
 }
+

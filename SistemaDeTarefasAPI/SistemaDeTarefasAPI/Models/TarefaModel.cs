@@ -8,5 +8,9 @@ namespace SistemaDeTarefasAPI.Models
         public string? Nome { get; set; }
         public string? Descricao { get; set; }
         public StatusTerafa Status { get; set; }
+
+        public int? UsuarioId { get; set; }
+
+        public UsuarioModel? Usuario { get; set; }
     }
 }
