@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Refit;
 using SistemaDeTarefasAPI.Controllers.Integracao.Refit;
 using SistemaDeTarefasAPI.Data;
+using SistemaDeTarefasAPI.Integracao;
+using SistemaDeTarefasAPI.Integracao.Interfaces;
 using SistemaDeTarefasAPI.Repositorios;
 using SistemaDeTarefasAPI.Repositorios.Interfaces;
 
@@ -27,6 +29,7 @@ namespace SistemaDeTarefasAPI
 
             builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
             builder.Services.AddScoped<ITarefaRepositorio, TarefaRespositorio>();
+            builder.Services.AddScoped<IViaCepIntegracao, ViaCepIntegracao>();
 
             builder.Services.AddRefitClient<IViaCepIntegracaoRefit>().ConfigureHttpClient(c =>
             {
