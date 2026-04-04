@@ -25,7 +25,7 @@ namespace SistemaDeTarefasAPI.Repositorios
             return await _dbContext.Usuarios.ToListAsync();
         }
 
-        public async Task<UsuarioModel> Adiconar(UsuarioModel usuario)
+        public async Task<UsuarioModel> Adicionar(UsuarioModel usuario)
         {
             await _dbContext.Usuarios.AddAsync(usuario);
             await _dbContext.SaveChangesAsync();
@@ -63,7 +63,6 @@ namespace SistemaDeTarefasAPI.Repositorios
             _dbContext.Usuarios.Remove(usuarioPorId);
             await _dbContext.SaveChangesAsync();
             return true;
-        }
-   
+        }    
     }
 }
