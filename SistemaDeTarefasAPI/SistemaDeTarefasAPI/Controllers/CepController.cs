@@ -1,4 +1,5 @@
 ﻿using Azure.Core;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SistemaDeTarefasAPI.Controllers.Integracao.Response;
@@ -6,6 +7,7 @@ using SistemaDeTarefasAPI.Integracao.Interfaces;
 
 namespace SistemaDeTarefasAPI.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CepController : ControllerBase
